@@ -23,6 +23,7 @@ jobs:
         run: |
           pkgload::load_all()
           drake::make(plan)
+        shell: Rscript {0}
       - name: Check
         run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
         shell: Rscript {0}
