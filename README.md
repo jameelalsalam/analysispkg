@@ -38,4 +38,6 @@ The analysispkg has the following features and goals:
   * Where should input data to the analysis be kept? Should it be in the repo at all? Should it be in the installed package?
   
   * Should the analysis be built in C.I. or locally only? Should report results be built in C.I.?
+  
+  * Is there a way to store the binary data as an artifact? I'd like to gitignore it.
 
