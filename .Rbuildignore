@@ -1,2 +1,9 @@
+
 ^analysispkg\.Rproj$
 ^\.Rproj\.user$
+
+_drake.R
+^.drake$
+packages.R
+
+.env

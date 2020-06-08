@@ -17,3 +17,5 @@ RoxygenNote: 7.1.0
 Depends: 
     drake,
     R (>= 2.10)
+Imports: 
+    readr

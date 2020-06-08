@@ -40,4 +40,23 @@ The analysispkg has the following features and goals:
   * Should the analysis be built in C.I. or locally only? Should report results be built in C.I.?
   
   * Is there a way to store the binary data as an artifact? I'd like to gitignore it.
+  
+  
+## How to Get Here:
+
+1) `usethis::create_package("yourpkgname")` # from containing folder
+   (or if you are already going, `usethis::use_description()` to pkg-ify)
+
+2) Verify using roxygen2 to document
+
+3) Add packages, e.g., usethis::use_package
+
+4) Add drake infrastructure
+
+5) Document package, exported data, and functions
+   `usethis::use_package_doc()`
+
+6) Add Github Actions basic infrastructure
+   Modify it to be appropriate to analysis pkg use.
+   
 
