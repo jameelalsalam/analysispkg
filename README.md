@@ -2,6 +2,7 @@
 # analysispkg
 
 <!-- badges: start -->
+[![R build status](https://github.com/jameelalsalam/analysispkg/workflows/R-CMD-check/badge.svg)](https://github.com/jameelalsalam/analysispkg/actions)
 <!-- badges: end -->
 
 The goal of analysispkg is to work out a structure for complex analyses-as-package.

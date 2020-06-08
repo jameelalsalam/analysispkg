@@ -8,3 +8,4 @@ packages.R
 
 .env
 ^LICENSE\.md$
+^\.github$
