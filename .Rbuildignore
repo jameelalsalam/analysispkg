@@ -7,3 +7,4 @@ _drake.R
 packages.R
 
 .env
+^LICENSE\.md$
