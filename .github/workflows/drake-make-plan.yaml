@@ -6,24 +6,21 @@ on:
     branches:
       - master
 
-name: R-CMD-check
+name: drake-make-plan
 
 jobs:
-  R-CMD-check:
+  drake-make-plan:
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@master
       - name: Install dependencies
         run: |
-          install.packages(c("remotes", "rcmdcheck", "pkgload"))
+          install.packages(c("remotes", "pkgload"))
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
       - name: Rebuild analysis
         run: |
           pkgload::load_all()
           drake::make(plan)
-        shell: Rscript {0}
-      - name: Check
-        run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
         shell: Rscript {0}
