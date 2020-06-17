@@ -1,18 +1,20 @@
 Package: analysispkg
-Title: What the Package Does (One Line, Title Case)
+Title: Example Analysis Structured as a Package
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Jameel",
            family = "Alsalam",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "jalsalam@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This example package shows a way to structure an
+    analysis as a package. Major features include: 1) exported data to
+    facilitate re-use of results, 2) major analysis steps structured as
+    functions and documented using roxygen2 and pkgdown, 3) build script
+    that can be used in several modes (development, clone by others, or on
+    CI), 4) automated testing on C.I., 5) fallback to fixed package and
+    dependency versions, 6) various output formats.
 License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
 Depends: 
     drake,
     R (>= 2.10)
@@ -20,3 +22,7 @@ Imports:
     readr
 Suggests: 
     usethis
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
