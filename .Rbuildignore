@@ -12,3 +12,5 @@ packages.R
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+
+^scripts$
